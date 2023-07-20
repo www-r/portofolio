@@ -1,0 +1,26 @@
+.slider-wrapper {
+	box-sizing: border-box;
+	overflow: auto;
+	background-color: transparent;
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	.slider {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		height: fit-content;
+
+		left: 0;
+		top: 0;
+		transition: transform 0.2s ease-in-out;
+		.slide {
+			margin: 0 3rem;
+			height: inherit;
+			background-color: pink;
+			object-fit: contain;
+			border: 1px solid #000;
+		}
+	}
+}
