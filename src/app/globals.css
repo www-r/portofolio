@@ -4,10 +4,13 @@
 	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono',
 		'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-
+	--color-white: #fff;
+	--color-ivory: #fcf5db;
+	--color-orange: #ed7c48;
+	--color-black: #000;
+	--color-green-darkest: #354f52;
+	--color-green: #52796f;
+	--color-green-brightest: #84a98c;
 	--primary-glow: conic-gradient(
 		from 180deg at 50% 50%,
 		#16abff33 0deg,
@@ -49,23 +52,51 @@
 }
 
 * {
-	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	line-height: 1.5;
+	scroll-behavior: smooth;
 }
 html {
 	font-size: 10px;
 }
 html,
 body {
+	min-width: 935px;
 	max-width: 100vw;
 	overflow-x: hidden;
 }
-
+section {
+	padding: 32px 60px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000;
+}
 a {
 	color: inherit;
 	text-decoration: none;
 }
 button {
 	outline: none;
+	cursor: pointer;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+h3 {
+	line-height: 2;
+	font-size: 18px;
+	font-weight: 700;
+}
+ul {
+	list-style: none;
+}
+.green-darkest {
+	color: #354f52;
+}
+.green {
+	color: #52796f;
+}
+.green-brightest {
+	color: #84a98c;
 }
