@@ -1,4 +1,18 @@
 footer {
 	background-color: #1f1e1d;
 	height: 22rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.contact-buttons-container {
+		margin: 2rem 0;
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+	}
+	p {
+		color: var(--color-white);
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
 }
