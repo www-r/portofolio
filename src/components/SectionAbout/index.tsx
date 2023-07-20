@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import './SectionAbout.styles.scss';
@@ -5,16 +6,30 @@ import Section from '@/components/common/Section';
 import Title from '../common/Title';
 import Button from '../common/Button/Button';
 import Slider from '../common/Slider';
-import { frame } from '../../../public/image/images.js';
-import { firstPhoto, secondPhoto, thirdPhoto } from '../../../public/image/images.js';
+import { frame, firstPhoto, secondPhoto, thirdPhoto } from '../../../public/images.js';
 export default function SectionSelfIntro() {
+	const introductionRef = useRef(null);
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			//About 이벤트
+			console.log(window.onscroll);
+			if (scrollY > 190) {
+				introductionRef.current.className = 'introduction';
+			}
+			if (scrollY < 180) {
+				introductionRef.current.className = 'introduction hidden';
+			}
+		});
+	}, []);
+
 	return (
 		<Section className="about-section">
 			<div className="cover-image">
 				<Image src={frame} alt="cover image" width={1062} />
 			</div>
 			<div className="about--introduction">
-				<p className="introduction">
+				<p className="introduction hidden" ref={introductionRef}>
 					안녕하세요
 					<br />
 					저는 많은 사람들과 의견을 나누는 것을 좋아하고,
@@ -36,7 +51,7 @@ export default function SectionSelfIntro() {
 				</Button>
 			</div>
 			<div className="about-container">
-				<Title border='right'>
+				<Title border="right">
 					<h2>About</h2>
 					<h3>
 						👩🏻‍🦰 이름: 김영은
