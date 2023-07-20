@@ -1,0 +1,18 @@
+.about-section {
+	.cover-image {
+		background-image: url('../../../public/image/ocean.svg');
+	}
+	.about--introduction {
+		padding: 10rem 10rem 7rem;
+		font-weight: 600;
+		font-size: 2.5rem;
+		text-align: center;
+		line-height: 1.5;
+		.introduction {
+			margin-bottom: 2rem;
+		}
+	}
+	.about-container {
+		display: flex;
+	}
+}
