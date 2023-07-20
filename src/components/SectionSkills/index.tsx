@@ -19,7 +19,7 @@ import {
 	netlifyIcon,
 	gitIcon,
 	githubMarkLogoDark,
-} from '../../../public/icons/icons';
+} from '../../../public/icons';
 import Image from 'next/image';
 import './SectionSkills.styles.scss';
 
@@ -27,7 +27,7 @@ import DivisionLine from '../common/DivisionLine';
 export default function SectionSkills() {
 	return (
 		<Section className="section--skills">
-			<Title border='right'>
+			<Title border="right">
 				<div>
 					<h2>Skills</h2>
 					<h3>현재까지 사용해해봤던 그리고 사용할 수 있는 기술들입니다. </h3>

@@ -7,7 +7,7 @@ import SectionProjects from '@/components/SectionProjects';
 import SectionContact from '@/components/SectionContact';
 import Footer from '@/components/common/Footer';
 import Button from '@/components/common/Button/Button';
-import { arrowTopIcon } from '../../public/icons/icons';
+import { arrowTopIcon } from '../../public/icons';
 
 export default function Home() {
 	return (

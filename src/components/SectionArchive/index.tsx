@@ -5,12 +5,12 @@ import Section from '../common/Section';
 import Title from '../common/Title';
 import Container from '../common/Container';
 import './SectionArchive.styles.scss';
-import { githubLogo, githubMarkLogoDark, blogLogo, blogMarkLogo } from '../../../public/icons/icons';
+import { githubLogo, githubMarkLogoDark, blogLogo, blogMarkLogo } from '../../../public/icons';
 
 export default function SectionArchive() {
 	return (
 		<Section className="section--archive">
-			<Title border='right'>
+			<Title border="right">
 				<h2>Archive</h2>
 			</Title>
 			<Container width="120rem">
