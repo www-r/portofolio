@@ -1,10 +1,27 @@
 header {
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex-wrap: nowrap;
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	min-width: inherit;
 	h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// flex-shrink: 0;
 		height: 18rem;
+		min-width: inherit;
+		width: 100vw;
 		font-size: 8rem;
+		transition: all 0.3s ease-in-out;
+		&.shrinked {
+			height: 9rem;
+			border-bottom: 1px solid #000;
+		}
 	}
 }
