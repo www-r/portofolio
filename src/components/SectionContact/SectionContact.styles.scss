@@ -1,3 +1,28 @@
 .contact-section {
 	background-color: #d5fcdf;
+	.contact-cards-wrapper {
+		padding: 5rem 0;
+		display: flex;
+		gap: 1rem;
+	}
+	.label {
+		font-size: 1.6rem;
+		font-weight: 500;
+		padding: 1rem 0;
+	}
+	.contact-card {
+		width: 35rem;
+		height: 5.2rem;
+		border: 3px solid var(--color-black);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--color-white);
+		a {
+			font-size: 2rem;
+			font-weight: 500;
+			padding: 1.5rem;
+			width: 100%;
+		}
+	}
 }
