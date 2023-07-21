@@ -38,7 +38,7 @@ export default function Footer() {
 						</Link>
 					</li>
 				</ul>
-				<p>© 2023. Kim Young En. All rights reserved.</p>
+				<div>© 2023. Kim Young En. All rights reserved.</div>
 			</div>
 		</footer>
 	);
