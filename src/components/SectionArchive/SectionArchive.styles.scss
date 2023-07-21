@@ -15,7 +15,7 @@
 	transform: translateZ(-1px);
 	&:hover {
 		transform: translateY(-2rem) translateZ(5px);
-		filter: drop-shadow(30px 10px 4px rgba(78, 114, 117, 1));
+		filter: drop-shadow(30px 10px 4px #51796e);
 	}
 }
 .archive-link {

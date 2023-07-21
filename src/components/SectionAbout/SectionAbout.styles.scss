@@ -1,7 +1,9 @@
 .about-section {
-	.cover-image {
-		background-image: url('../../../public/images/ocean.svg');
-	}
+	// .cover-image {
+	// 	background-image: url('../../../public/images/ocean.png');
+	// 	background-repeat: no-repeat;
+	// 	background-position: center;
+	// }
 	.about--introduction {
 		padding: 10rem 10rem 7rem;
 		font-weight: 600;
@@ -20,5 +22,8 @@
 	}
 	.about-container {
 		display: flex;
+		.about--item {
+			margin-bottom: 1rem;
+		}
 	}
 }

@@ -24,13 +24,11 @@
 }
 
 .colors--explanations-container {
-	display: flex;
-	flex-direction: column;
-	margin-top: 14rem;
-
+	margin: 4rem 0;
+	width: 26rem;
+	height: 30rem;
 	position: sticky;
 	top: 0;
-
 	.color--explanation-wrapper {
 		display: flex;
 		align-items: center;

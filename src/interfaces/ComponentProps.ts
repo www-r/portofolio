@@ -1,3 +1,4 @@
+import Module from 'module';
 import React, { ReactNode, ComponentProps } from 'react';
 
 //common
@@ -28,4 +29,21 @@ export interface IconProps {
 export interface SliderProps {
 	width?: string;
 	array: any[];
+}
+export interface Project {
+	image: any;
+	title: string;
+	skills: string;
+	members: number;
+	id: string;
+}
+export interface ProjectBoxProps extends Project {
+
+}
+export interface ProjectDetails {
+	video: any;
+	skills: string;
+	whatIDid: string;
+	whatWasHard: string;
+	whatILearned: string;
 }

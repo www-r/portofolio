@@ -28,28 +28,24 @@ export default function SectionSkills() {
 	return (
 		<Section className="section--skills">
 			<Title border="right">
-				<div>
-					<h2>Skills</h2>
-					<h3>현재까지 사용해해봤던 그리고 사용할 수 있는 기술들입니다. </h3>
-				</div>
+				<h2>Skills</h2>
+				<h3>현재까지 사용해본 그리고 사용할 수 있는 기술들입니다. </h3>
 				<ul className="colors--explanations-container">
 					<li className="color--explanation-wrapper">
 						<div className="colored-circle skill--high"></div>
 						<p className="green-darkest color-explanation">
-							동작 원리를 이해하고 있고, 설명할 수 있습니다. 프로젝트에 바로 적용가능합니다.
+							대부분의 동작 원리를 이해하고 있고, 꾸준히 공부하는 중입니다. 필요에 맞게 프로젝트에 적용 가능합니다.
 						</p>
 					</li>
 					<li className="color--explanation-wrapper">
 						<div className="colored-circle skill--middle"></div>
 						<p className="green color-explanation">
-							동작 원리를 이해는 하고 있으나, 설명을 할 정도까지는 아닙니다. 프로젝트에 바로 적용가능합니다.
+							큰 어려움없이 사용할 수 있지만, 원리를 설명하기엔 부족합니다. 필요에 맞게 프로젝트에 적용 가능합니다.
 						</p>
 					</li>
 					<li className="color--explanation-wrapper">
 						<div className="colored-circle skill--low"></div>
-						<p className="green-brightest color-explanation">
-							코드를읽을수있으며,자료를참고하여간단한코드를작성할수있음
-						</p>
+						<p className="green-brightest color-explanation">공식문서를 참조하면서 코드를 읽고 쓸 수 있습니다.</p>
 					</li>
 				</ul>
 			</Title>

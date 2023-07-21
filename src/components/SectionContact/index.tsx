@@ -7,7 +7,7 @@ export default function SectionContact() {
 		<Section className="contact-section">
 			<Title width="100%" height="15rem" border="bottom">
 				<h2>Contact</h2>
-				<h3>이쪽으로 연락주시면 감사하겠습니다.</h3>
+				{/* <h3>이쪽으로 연락주시면 감사하겠습니다.</h3> */}
 			</Title>
 			<ul className="contact-cards-wrapper">
 				<li>

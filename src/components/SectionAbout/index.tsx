@@ -6,27 +6,33 @@ import Section from '@/components/common/Section';
 import Title from '../common/Title';
 import Button from '../common/Button/Button';
 import Slider from '../common/Slider';
-import { frame, firstPhoto, secondPhoto, thirdPhoto } from '../../../public/images.js';
+import { tree, ocean, image0, image1, image2, image3, image4, image5, image6 } from '../../../public/images.js';
+
 export default function SectionSelfIntro() {
-	const introductionRef = useRef(null);
+	const coverImageRef = useRef(null);
+	const introductionRef = useRef<HTMLParagraphElement>(null);
+
+	const array = [tree, ocean];
 
 	useEffect(() => {
-		window.addEventListener('scroll', () => {
+		onscroll = () => {
 			//About 이벤트
-			console.log(window.onscroll);
-			if (scrollY > 190) {
+			if (scrollY > 190 && introductionRef && introductionRef.current) {
 				introductionRef.current.className = 'introduction';
 			}
-			if (scrollY < 180) {
-				introductionRef.current.className = 'introduction hidden';
+			if (scrollY < 180 && introductionRef && introductionRef.current) {
+				introductionRef.current.className = 'introduction '; //hidden 추가해야함
 			}
-		});
+		};
 	}, []);
 
 	return (
 		<Section className="about-section">
-			<div className="cover-image">
-				<Image src={frame} alt="cover image" width={1062} />
+			<div className="cover-image" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+				{/* {array.map((item, index) => (
+					<Image src={item} key={index} alt="cover image" ref={coverImageRef} height={500} />
+				))} */}
+				<Image src={tree} alt="cover image" height={500} />
 			</div>
 			<div className="about--introduction">
 				<p className="introduction hidden" ref={introductionRef}>
@@ -53,19 +59,30 @@ export default function SectionSelfIntro() {
 			<div className="about-container">
 				<Title border="right">
 					<h2>About</h2>
-					<h3>
-						👩🏻‍🦰 이름: 김영은
-						<br />
-						🎂 나이: 만 25세(98년생)
-						<br />
-						🏠 주소지: 서울특별시 용산구 이촌동
-						<br />
-						📞 연락처: 010-7475-2318
-						<br />
-						✉️ 이메일: inmein@naver.com
-					</h3>
+					<ul>
+						<li className="about--item">
+							<h3>👩🏻‍🦰 이름</h3>
+							<h4>김영은</h4>
+						</li>
+						<li className="about--item">
+							<h3>🎂 나이</h3>
+							<h4>만 25세(98년생)</h4>
+						</li>
+						<li className="about--item">
+							<h3>🏠 주소지</h3>
+							<h4>서울특별시 용산구 이촌동</h4>
+						</li>
+						<li className="about--item">
+							<h3>📞 연락처</h3>
+							<h4>010-7475-2318</h4>
+						</li>
+						<li className="about--item">
+							<h3>✉️ 이메일</h3>
+							<h4>inmein@naver.com</h4>
+						</li>
+					</ul>
 				</Title>
-				<Slider array={[firstPhoto, secondPhoto, thirdPhoto]} />
+				<Slider array={[image0, image1, image2, image3, image4, image5, image6]} />
 			</div>
 		</Section>
 	);
