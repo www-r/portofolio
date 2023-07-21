@@ -1,0 +1,27 @@
+.project-box {
+	box-sizing: border-box;
+	width: 40rem;
+	height: 50rem;
+	background-color: var(--color-white);
+	border-right: 0.1rem solid var(--color-black);
+	.project--image-container {
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+	}
+	.project--text {
+		padding: 2rem;
+		width: fit-content;
+		.project-name {
+			font-size: 3rem;
+			font-weight: 500;
+		}
+		.skills-container {
+			font-size: 2rem;
+		}
+	}
+	.members-container {
+		padding: 2rem;
+		font-size: 3rem;
+	}
+}
