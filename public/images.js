@@ -1,11 +1,11 @@
 export * as tree from './images/tree.jpg';
 export * as ocean from './images/ocean.png';
-export * as image0 from './images/image0.jpg';
+export * as image0 from './images/image0.png';
 export * as image1 from './images/image1.png';
 export * as image2 from './images/image2.png';
 export * as image3 from './images/image3.png';
 export * as image4 from './images/image4.png';
 export * as image5 from './images/image5.png';
 export * as image6 from './images/image6.png';
-export * as project0 from './images/todolist-js.png'
-export * as project1 from './images/todolist-react.png'
+export * as project0 from './images/todolist-js.png';
+export * as project1 from './images/todolist-react.png';

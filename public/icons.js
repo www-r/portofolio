@@ -23,3 +23,4 @@ export * as gitIcon from './icons/icon-git.svg';
 export * as notionIcon from './icons/icon-notion.svg';
 export * as instagramIcon from './icons/icon-instagram.svg'
 export * as threadsIcon from './icons/icon-threads.svg'
+export * as closeIcon from './icons/icon-close.svg'
