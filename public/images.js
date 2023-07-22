@@ -7,8 +7,7 @@ export * as image3 from './images/image3.png';
 export * as image4 from './images/image4.png';
 export * as image5 from './images/image5.png';
 export * as image6 from './images/image6.png';
-export * as project0 from './images/todolist-js.png';
-export * as project1 from './images/todolist-react.png';
+export * as todolist from './images/todos.png'
 export * as marketlog from './images/marketlog-home.png';
 export * as admin from './images/3dasset-admin-enroll-img.png';
 export * as hotelbnb from './images/hotelbnb-detail.png';

@@ -4,47 +4,8 @@ import Section from '@/components/common/Section';
 import Title from '../common/Title';
 import Slider from '../common/Slider';
 import ProjectBox from '../common/ProjectBox';
-import { Project } from '@/interfaces/ComponentProps';
-import { project0, project1 } from '../../../public/images';
-import { marketlog, admin, hotelbnb, portfolio } from '../../../public/images';
+import { projectsArr } from '@/constants/projectsArr';
 export default function SectionProjects() {
-	const projectsArr: Project[] = [
-		{
-			image: project0,
-			title: '투두리스트',
-			skills: 'Javascript, Typescript, React, CSS, SCSS, styled-components',
-			members: 1,
-			id: 'project0',
-		},
-		{
-			image: marketlog,
-			title: '마켓로그 - 개발자들을 위한 쇼핑몰',
-			skills: 'Javascript, Typescipt, SCSS, ',
-			members: 5,
-			id: 'project1',
-		},
-		{
-			image: admin,
-			title: '3DAsset',
-			skills: 'javascript, typescript',
-			members: 4,
-			id: 'project2',
-		},
-		{
-			image: hotelbnb,
-			title: '호텔비앤비',
-			skills: 'React, emotion, ReactQuery, Firebase',
-			members: 3,
-			id: 'project3',
-		},
-		{
-			image: portfolio,
-			title: '개인 포트폴리오 사이트',
-			skills: 'javascript, typescript',
-			members: 1,
-			id: 'project4',
-		},
-	];
 	return (
 		<Section className="section--projects">
 			<Title width="100%" height="15rem" border="bottom">
