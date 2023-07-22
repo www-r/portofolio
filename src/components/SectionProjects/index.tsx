@@ -6,36 +6,43 @@ import Slider from '../common/Slider';
 import ProjectBox from '../common/ProjectBox';
 import { Project } from '@/interfaces/ComponentProps';
 import { project0, project1 } from '../../../public/images';
-
+import { marketlog, admin, hotelbnb, portfolio } from '../../../public/images';
 export default function SectionProjects() {
 	const projectsArr: Project[] = [
 		{
 			image: project0,
-			title: 'Project1',
-			skills: 'javascript, typescript',
+			title: '투두리스트',
+			skills: 'Javascript, Typescript, React, CSS, SCSS, styled-components',
 			members: 1,
 			id: 'project0',
 		},
 		{
-			image: project1,
-			title: 'Project2',
-			skills: 'javascript, typescript',
-			members: 1,
+			image: marketlog,
+			title: '마켓로그 - 개발자들을 위한 쇼핑몰',
+			skills: 'Javascript, Typescipt, SCSS, ',
+			members: 5,
 			id: 'project1',
 		},
 		{
-			image: project1,
-			title: 'Project2',
+			image: admin,
+			title: '3DAsset',
 			skills: 'javascript, typescript',
-			members: 1,
+			members: 4,
 			id: 'project2',
 		},
 		{
-			image: project1,
-			title: 'Project2',
+			image: hotelbnb,
+			title: '호텔비앤비',
+			skills: 'React, emotion, ReactQuery, Firebase',
+			members: 3,
+			id: 'project3',
+		},
+		{
+			image: portfolio,
+			title: '개인 포트폴리오 사이트',
 			skills: 'javascript, typescript',
 			members: 1,
-			id: 'project3',
+			id: 'project4',
 		},
 	];
 	return (
