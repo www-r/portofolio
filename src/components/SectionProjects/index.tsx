@@ -22,6 +22,7 @@ export default function SectionProjects() {
 						key={project.id}
 						image={project.image}
 						title={project.title}
+						summary={project.summary}
 						skills={project.skills}
 						members={project.members}
 					/>

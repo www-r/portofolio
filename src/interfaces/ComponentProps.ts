@@ -33,13 +33,12 @@ export interface SliderProps {
 export interface Project {
 	image: any;
 	title: string;
+	summary: string;
 	skills: string;
 	members: number;
 	id: string;
 }
-export interface ProjectBoxProps extends Project {
-
-}
+export interface ProjectBoxProps extends Project {}
 export interface ProjectDetails {
 	video: any;
 	skills: string;

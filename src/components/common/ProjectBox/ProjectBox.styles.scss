@@ -13,13 +13,16 @@
 	.project--text {
 		padding: 0 2rem;
 		width: fit-content;
-		.project-name {
-			margin-top: 1rem;
+		font-size: 1.8rem;
+		font-weight: 500;
+		.project--name {
+			margin: 1rem 0;
 			font-size: 2.3rem;
 			font-weight: 700;
+			border-bottom: 2px solid var(--color-black);
 		}
-		.skills-container {
-			font-size: 2rem;
+		.project--summary {
+			margin-bottom: 1rem;
 		}
 	}
 	.members-container {
