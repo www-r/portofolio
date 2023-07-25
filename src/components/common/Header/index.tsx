@@ -46,7 +46,7 @@ export default function Header() {
 	return (
 		<header>
 			<Link href="/">
-				<h1 className={`header-title ${headerShrinked ? 'shrinked' : ''}`}>Frontend Developer</h1>
+				<h1 className={`header-title ${headerShrinked ? 'shrinked' : ''}`}>Front-End Developer</h1>
 			</Link>
 			{!hidden && <NavBar />}
 		</header>
