@@ -4,31 +4,41 @@ import Link from 'next/link';
 import './Header.styles.scss';
 import NavBar from '@/components/common/NavBar';
 import { debounce } from '@/utils/utils';
+
 export default function Header() {
+	const [headerShrinked, setHeaderShrinked] = useState(false);
+	const [prevScrollY, setPrevScrollY] = useState(0);
 	const [hidden, setHidden] = useState(false);
 	const headerTitleRef = useRef<HTMLHeadingElement>(null);
 
-	function scrollHandler() {
-		// scrollY 에 따른 header의 사이즈 변화
-		if (scrollY > 94 && headerTitleRef && headerTitleRef.current) {
-			headerTitleRef.current.className = 'header-title shrinked';
-		} else {
-			headerTitleRef && headerTitleRef.current && (headerTitleRef.current.className = 'header-title');
-		}
-
-		//scroll 방향에 따른 navBar 유무
-		let prevScrollY = 0;
-		let currentScrollY = scrollY;
-		if (prevScrollY < currentScrollY) {
+	const headerHandler = () => {
+		//내려갈 때
+		if (prevScrollY < window.scrollY) {
+			console.log('down', scrollY);
+			setPrevScrollY(window.scrollY);
 			setHidden(true);
-			prevScrollY = scrollY;
-		} else if (prevScrollY > currentScrollY) {
+			// scrollY 에 따른 header의 사이즈 변화
+			if (window.scrollY < 94) {
+				setHeaderShrinked(false);
+				setHidden(false);
+			} else setHeaderShrinked(true);
+		} else {
+			//올라갈 때
+			console.log('up', scrollY);
+			setPrevScrollY(window.scrollY);
 			setHidden(false);
-			prevScrollY = scrollY;
+			// scrollY 에 따른 header의 사이즈 변화
+			if (window.scrollY < 94) {
+				setHeaderShrinked(false);
+				setHidden(false);
+			} else {
+				setHeaderShrinked(true);
+			}
 		}
-	}
+	};
+
 	useEffect(() => {
-		window.addEventListener('scroll', scrollHandler);
+		window.addEventListener('scroll', headerHandler);
 
 		// return window.removeEventListener('scroll', scrollHandler);
 	}, []);
@@ -36,9 +46,7 @@ export default function Header() {
 	return (
 		<header>
 			<Link href="/">
-				<h1 className="header-title" ref={headerTitleRef}>
-					Frontend Developer
-				</h1>
+				<h1 className={`header-title ${headerShrinked ? 'shrinked' : ''}`}>Frontend Developer</h1>
 			</Link>
 			{!hidden && <NavBar />}
 		</header>

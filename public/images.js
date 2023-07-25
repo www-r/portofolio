@@ -1,3 +1,4 @@
+export * as cat from './images/cursor-cat.PNG';
 export * as tree from './images/tree.jpg';
 export * as ocean from './images/ocean.png';
 export * as image0 from './images/image0.png';
@@ -7,8 +8,8 @@ export * as image3 from './images/image3.png';
 export * as image4 from './images/image4.png';
 export * as image5 from './images/image5.png';
 export * as image6 from './images/image6.png';
-export * as todolist from './images/todos.png'
+export * as todolist from './images/todos.png';
 export * as marketlog from './images/marketlog-home.png';
 export * as admin from './images/3dasset-admin-enroll-img.png';
 export * as hotelbnb from './images/hotelbnb-detail.png';
-export * as portfolio from './images/kyeportfoliosite.png'
+export * as portfolio from './images/kyeportfoliosite.png';

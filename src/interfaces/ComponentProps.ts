@@ -1,12 +1,11 @@
 import Module from 'module';
-import React, { ReactNode, ComponentProps } from 'react';
+import React, { ReactNode, ComponentProps, MouseEventHandler, Dispatch, SetStateAction } from 'react';
 
 //common
 export interface DivisionLineProps {
 	direction: 'row' | 'column';
 }
-export interface SectionProps {
-	children: ReactNode;
+export interface SectionProps extends ComponentProps<'div'> {
 	className?: string;
 	width?: string;
 	height?: string;
@@ -38,11 +37,16 @@ export interface Project {
 	members: number;
 	id: string;
 }
-export interface ProjectBoxProps extends Project {}
-export interface ProjectDetails {
-	video: any;
-	skills: string;
-	whatIDid: string;
-	whatWasHard: string;
-	whatILearned: string;
+export interface ProjectBoxProps {
+	index: number;
+	project: Project;
+	isClicked: boolean[];
+	setIsClicked: Dispatch<SetStateAction<any[]>>;
+	shown: string;
+}
+export interface ProjectDetailsProps {
+	index: number;
+	isClicked: boolean[];
+	setIsClicked: Dispatch<SetStateAction<any[]>>;
+	projectDetail: any;
 }

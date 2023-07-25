@@ -4,6 +4,24 @@
 	height: 50rem;
 	background-color: var(--color-white);
 	border-right: 0.1rem solid var(--color-black);
+	transition: all 0.1s linear;
+	&:hover {
+		transform: translateY(-2rem) translateZ(5px);
+		filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.5));
+		cursor: pointer;
+		background-color: #fcf5db;
+	}
+	&.shown {
+		transform: translateY(-2rem) translateZ(5px);
+		filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.5));
+		background-color: #fcf5db;
+	}
+	.projectBox-wrapper {
+		display: flex;
+		overflow: auto;
+		margin-top: 5rem;
+		border: 1px solid var(--color-black);
+	}
 	.project--image-container {
 		width: fit-content;
 		display: flex;

@@ -1,3 +1,18 @@
 .section--projects {
 	background-color: #e5f0f3;
+	position: relative;
+	.projectBox-wrapper {
+		filter: drop-shadow(7px 7px 20px rgba(0, 0, 0, 0.5));
+	}
+}
+.custom-cursor {
+	display: block;
+	width: 15rem;
+	height: 15rem;
+	background-image: url('../../../public//images/cursor-cat.PNG');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
 }

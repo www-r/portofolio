@@ -1,16 +1,13 @@
 .project-details-modal {
 	box-sizing: border-box;
-	margin: auto;
-	border: 1px solid var(--color-black);
+	margin: 5rem auto;
+	border: 2px solid var(--color-black);
 	padding: 5rem;
-	width: 90vw;
+	width: 80vw;
 	height: 90vh;
-	background-color: #e5f0f3;
+	background-color: #fcf5db;
 	overflow: auto;
-	position: fixed;
-	top: 5rem;
-	left: 5rem;
-	z-index: 9999;
+	filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.5));
 	.details-container {
 		position: relative;
 	}
@@ -18,5 +15,6 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+		z-index: 9;
 	}
 }
