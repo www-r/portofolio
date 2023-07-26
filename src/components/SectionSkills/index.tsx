@@ -60,13 +60,13 @@ export default function SectionSkills() {
 						<Icon name="Next.js" color="#52796f">
 							<Image src={nextjsIcon} alt="Next.js icon" height={42} />
 						</Icon>
-						<Icon name="Typescript" color="#52796f">
+						<Icon name="TypeScript" color="#52796f">
 							<Image src={typescriptIcon} alt="typescript icon" height={42} />
 						</Icon>
 						<Icon name="HTML" color="#354f52">
 							<Image src={htmlIcon} alt="html icon" height={42} />
 						</Icon>
-						<Icon name="Javascript" color="#354f52">
+						<Icon name="JavaScript" color="#354f52">
 							<Image src={javascriptIcon} alt="Javascript icon" height={42} />
 						</Icon>
 					</div>
