@@ -15,11 +15,11 @@ export default function SectionArchive() {
 			</Title>
 			<Container width="120rem">
 				<li className="archive-item">
-					<Link href="https://github.com/www-r">
+					<Link href="https://github.com/www-r" target="_blank">
 						<Image src={githubMarkLogoDark} alt="github logo" height={42} />
 						<Image src={githubLogo} alt="github logo" height={42} />
 					</Link>
-					<Link className="archive-link" href="https://github.com/www-r">
+					<Link className="archive-link" href="https://github.com/www-r" target="_blank">
 						github.com/www-r
 					</Link>
 					<div className="archive-item--text">
@@ -39,10 +39,10 @@ export default function SectionArchive() {
 					</div>
 				</li>
 				<li className="archive-item">
-					<Link href="https://blog.naver.com/inmein">
+					<Link href="https://blog.naver.com/inmein" target="_blank">
 						<Image src={blogLogo} alt="blog logo" height={42} />
 					</Link>
-					<Link className="archive-link" href="https://blog.naver.com/inmein">
+					<Link className="archive-link" href="https://blog.naver.com/inmein" target="_blank">
 						blog.naver.com/inmein
 					</Link>
 					<div className="archive-item--text">
