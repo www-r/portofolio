@@ -23,20 +23,6 @@ export default function Footer() {
 							</Button>
 						</Link>
 					</li>
-					<li>
-						<Link href="https://instagram.com/wwwr_kye?igshid=OGQ5ZDc2ODk2ZA==">
-							<Button>
-								<Image src={instagramIcon} alt="instagram icon" height={48} />
-							</Button>
-						</Link>
-					</li>
-					<li>
-						<Link href={'#'}>
-							<Button>
-								<Image src={threadsIcon} alt="threads icon" height={48} />
-							</Button>
-						</Link>
-					</li>
 				</ul>
 				<div>© 2023. Kim Young En. All rights reserved.</div>
 			</div>

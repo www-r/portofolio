@@ -6,10 +6,10 @@
 	width: fit-content;
 	transition: all 0.2s ease-in-out;
 	transform: translateZ(-1px);
-	&:hover {
-		transform: translateY(-2rem) translateZ(5px);
-		filter: drop-shadow(30px 10px 4px #51796e);
-	}
+	// &:hover {
+	// 	transform: translateY(-2rem) translateZ(5px);
+	// 	filter: drop-shadow(30px 10px 4px #51796e);
+	// }
 	.icon-wrapper {
 		padding: 0 1.5rem;
 	}

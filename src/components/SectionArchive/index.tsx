@@ -5,7 +5,7 @@ import Section from '../common/Section';
 import Title from '../common/Title';
 import Container from '../common/Container';
 import './SectionArchive.styles.scss';
-import { githubLogo, githubMarkLogoDark, blogLogo } from '../../../public/icons';
+import { githubLogo, githubMarkLogoDark, tistoryLogo } from '../../../public/icons';
 
 export default function SectionArchive() {
 	return (
@@ -39,11 +39,11 @@ export default function SectionArchive() {
 					</div>
 				</li>
 				<li className="archive-item">
-					<Link href="https://blog.naver.com/inmein" target="_blank">
-						<Image src={blogLogo} alt="blog logo" height={42} />
+					<Link href="https://woorii-kye.tistory.com/" target="_blank">
+						<Image src={tistoryLogo} alt="blog logo" height={42} />
 					</Link>
-					<Link className="archive-link" href="https://blog.naver.com/inmein" target="_blank">
-						blog.naver.com/inmein
+					<Link className="archive-link" href="https://woorii-kye.tistory.com/" target="_blank">
+						woorii-kye.tistory.com
 					</Link>
 					<div className="archive-item--text">
 						<span className="first-line">

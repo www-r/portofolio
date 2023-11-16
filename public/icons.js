@@ -1,8 +1,7 @@
 export * as githubLogo from './icons/logo-github.png';
 export * as githubMarkLogoWhite from './icons/logo-github--white.png';
 export * as githubMarkLogoDark from './icons/logo-github--dark.png';
-export * as blogLogo from './icons/logo-blog.png';
-export * as blogMarkLogo from './icons/logo-blog-icon.png';
+export * as tistoryLogo from './icons/tistoryIcon.webp';
 export * as arrowTopIcon from './icons/arrow-top.svg';
 export * as cssIcon from './icons/icon-css.svg';
 export * as htmlIcon from './icons/icon-html5.svg';
@@ -19,8 +18,9 @@ export * as yarnIcon from './icons/icon-yarn.svg';
 export * as nextjsIcon from './icons/icon-nextjs.svg';
 export * as vercelIcon from './icons/icon-vercel.svg';
 export * as netlifyIcon from './icons/icon-netlify.svg';
+export * as awsLogo from './icons/awsLogo.svg';
 export * as gitIcon from './icons/icon-git.svg';
 export * as notionIcon from './icons/icon-notion.svg';
-export * as instagramIcon from './icons/icon-instagram.svg'
-export * as threadsIcon from './icons/icon-threads.svg'
-export * as closeIcon from './icons/icon-close.svg'
+export * as instagramIcon from './icons/icon-instagram.svg';
+// export * as threadsIcon from './icons/icon-threads.svg';
+export * as closeIcon from './icons/icon-close.svg';
